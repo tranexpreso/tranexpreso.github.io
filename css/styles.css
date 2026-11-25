@@ -58,11 +58,9 @@ a:hover { color: var(--negro); }
   flex-direction: column;
 }
 .logo-text h1 {
-  color: var(--rojo);
   font-size: 1.8rem;
   margin: 0;
   line-height: 1;
-  font-weight: 900;
 }
 .logo-text span {
   color: var(--texto-gris);
@@ -90,7 +88,6 @@ a:hover { color: var(--negro); }
   margin-bottom: 40px;
   text-transform: uppercase;
 }
-.text-red { color: var(--rojo); }
 
 .welcome-text p {
   margin-bottom: 20px;
@@ -116,15 +113,27 @@ a:hover { color: var(--negro); }
   margin: 0;
 }
 
-/* --- Layout de Dos Columnas (Para Páginas Internas) --- */
+/* --- Estilos para el nombre de la empresa --- */
+.brand-text {
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+.brand-text .text-black {
+  color: var(--negro);
+}
+.brand-text .text-red {
+  color: var(--rojo);
+}
+
+/* --- Layout de Dos Columnas --- */
 .layout-two-cols {
   display: grid;
-  grid-template-columns: 2.5fr 1fr; /* 2.5 partes contenido, 1 parte sidebar */
+  grid-template-columns: 2.5fr 1fr;
   gap: 40px;
   padding: 40px 0;
 }
 
-/* --- Sidebar (Barra Lateral Derecha) --- */
+/* --- Sidebar --- */
 .sidebar h3 {
   color: var(--rojo);
   font-size: 1.1rem;
@@ -136,11 +145,7 @@ a:hover { color: var(--negro); }
 }
 .sidebar h3:first-child { margin-top: 0; }
 .sidebar ul { list-style: none; padding: 0; }
-.sidebar ul li {
-  margin-bottom: 10px;
-  position: relative;
-  padding-left: 15px;
-}
+.sidebar ul li { margin-bottom: 10px; position: relative; padding-left: 15px; }
 .sidebar ul li::before {
   content: '•';
   color: var(--negro);
@@ -148,14 +153,10 @@ a:hover { color: var(--negro); }
   left: 0;
   font-size: 1.2rem;
 }
-.sidebar a {
-  color: var(--texto-gris);
-  font-size: 0.9rem;
-  font-style: italic;
-}
+.sidebar a { color: var(--texto-gris); font-size: 0.9rem; font-style: italic; }
 .sidebar a:hover { color: var(--rojo); text-decoration: underline; }
 
-/* --- Cuadrícula de 4 Tarjetas (Usado en el Index) --- */
+/* --- Cuadrícula de 4 Tarjetas --- */
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -168,7 +169,7 @@ a:hover { color: var(--negro); }
 .card-light h3 { color: var(--rojo); font-size: 1.2rem; margin-bottom: 10px; }
 .card-light p { font-size: 0.9rem; color: var(--texto-gris); line-height: 1.5; }
 
-/* --- Estilos para Tablas (Transporte al día) --- */
+/* --- Estilos para Tablas --- */
 .custom-table {
   width: 100%;
   border-collapse: collapse;
@@ -181,44 +182,25 @@ a:hover { color: var(--negro); }
   text-align: center;
 }
 .custom-table th {
-  background-color: #EECCA1; /* Color naranja/beige de la captura */
+  background-color: #EECCA1;
   color: var(--negro);
   font-weight: 700;
 }
-.custom-table tr:nth-child(even) {
-  background-color: #FDF5E6; 
-}
-.custom-table td:first-child {
-  font-weight: 700;
-  background-color: #F5DEB3;
-}
-.custom-table td:nth-child(2), 
-.custom-table td:nth-child(3) {
-  font-weight: 600;
-}
+.custom-table tr:nth-child(even) { background-color: #FDF5E6; }
+.custom-table td:first-child { font-weight: 700; background-color: #F5DEB3; }
+.custom-table td:nth-child(2), .custom-table td:nth-child(3) { font-weight: 600; }
 
-/* --- Sección de Boletines (Transporte al día) --- */
+/* --- Sección de Boletines --- */
 .boletines-grid {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-top: 20px;
 }
-.boletin-item {
-  text-align: center;
-}
-.boletin-item img {
-  width: 100%;
-  max-width: 250px;
-  margin-bottom: 15px;
-}
-.boletin-item p {
-  font-size: 0.85rem;
-  text-align: center;
-}
-.boletin-item strong {
-  color: var(--negro);
-}
+.boletin-item { text-align: center; }
+.boletin-item img { width: 100%; max-width: 250px; margin-bottom: 15px; }
+.boletin-item p { font-size: 0.85rem; text-align: center; }
+.boletin-item strong { color: var(--negro); }
 
 /* --- Footer Claro --- */
 .light-footer {
@@ -239,11 +221,7 @@ a:hover { color: var(--negro); }
   margin-bottom: 20px;
   text-transform: uppercase;
 }
-.footer-grid-light p {
-  font-size: 0.9rem;
-  color: var(--texto-gris);
-  margin-bottom: 8px;
-}
+.footer-grid-light p { font-size: 0.9rem; color: var(--texto-gris); margin-bottom: 8px; }
 .footer-grid-light strong { color: var(--negro); }
 
 .footer-list { list-style: none; padding: 0; }
@@ -297,17 +275,10 @@ a:hover { color: var(--negro); }
   }
   .nav-links.active { display: flex; }
   
-  /* Layout de dos columnas se vuelve de una sola */
   .layout-two-cols { grid-template-columns: 1fr; }
-  
   .welcome-title { font-size: 1.6rem; }
   .footer-grid-light { grid-template-columns: 1fr; }
   
-  /* Tablas y boletines en móviles */
   .boletines-grid { grid-template-columns: 1fr; }
-  .custom-table {
-    display: block;
-    overflow-x: auto;
-    white-space: nowrap;
-  }
+  .custom-table { display: block; overflow-x: auto; white-space: nowrap; }
 }

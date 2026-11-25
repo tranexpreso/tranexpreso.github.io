@@ -6,7 +6,6 @@
     <title>Transporte Expreso | Te acompañamos en cada destino</title>
     <meta name="description" content="Empresa líder en transporte en Santiago de Cuba. Servicios de cargas y pasajeros por flete.">
     <link rel="stylesheet" href="css/styles.css">
-    <!-- FontAwesome versión actualizada -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="assets/logo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
@@ -28,23 +27,22 @@
         </div>
     </header>
 
-    <!-- HERO: El estilo ahora está controlado desde el CSS -->
-    <section class="hero">
-        <div class="container hero-buttons" style="text-align: center; width: 100%;">
-            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
-                <a href="servicios.html" class="btn" style="font-size: 1.1rem; padding: 18px 40px;">Ver Servicios</a>
-                <a href="contacto.html" class="btn btn-outline" style="font-size: 1.1rem; padding: 18px 40px; background: rgba(0,0,0,0.4); backdrop-filter: blur(5px);">Contactar Ahora</a>
-            </div>
-        </div>
-    </section>
+    <!-- HERO: Solo el banner, sin botones -->
+    <section class="hero"></section>
 
-    <!-- NUEVA SECCIÓN DE BIENVENIDA -->
-    <section class="section container" style="padding-top: 80px;">
+    <!-- SECCIÓN DE BIENVENIDA CON LOS BOTONES MOVIDOS AQUÍ -->
+    <section class="section container" style="padding-top: 60px;">
         <div style="text-align: center; max-width: 800px; margin: 0 auto;">
-            <h2 class="section-title" style="font-size: 2.2rem;">Líderes en <span>Transportación</span></h2>
-            <p style="font-size: 1.2rem; color: var(--blanco); line-height: 1.8;">
+            <h2 class="section-title" style="font-size: 2.2rem; margin-bottom: 30px;">Líderes en <span>Transportación</span></h2>
+            <p style="font-size: 1.2rem; color: var(--blanco); line-height: 1.8; margin-bottom: 40px;">
                 En <strong>Transporte Expreso</strong> no solo movemos mercancías o personas; conectamos negocios, familias y sueños. Con base en Santiago de Cuba, ofrecemos soluciones logísticas integrales con los más altos estándares de seguridad y puntualidad en toda la región oriental.
             </p>
+            
+            <!-- AQUÍ ESTÁN LOS BOTONES AHORA -->
+            <div style="display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;">
+                <a href="servicios.html" class="btn" style="font-size: 1.1rem; padding: 15px 35px;">Ver Servicios</a>
+                <a href="contacto.html" class="btn btn-outline" style="font-size: 1.1rem; padding: 15px 35px;">Contactar Ahora</a>
+            </div>
         </div>
     </section>
 
@@ -100,7 +98,6 @@
                     <a href="/catalogo/">Catálogo (Próximamente)</a>
                     <a href="/tarjeta/">Tarjeta (Próximamente)</a>
                     
-                    <!-- REDES SOCIALES CON SVG -->
                     <div style="margin-top: 20px; display: flex; gap: 15px; align-items: center;">
                         <a href="https://facebook.com/tranexpreso" target="_blank" style="color: var(--blanco); font-size: 1.4rem; transition: color 0.3s;" onmouseover="this.style.color='var(--rojo)'" onmouseout="this.style.color='var(--blanco)'">
                             <i class="fa-brands fa-facebook"></i>
@@ -119,7 +116,6 @@
         </div>
     </footer>
 
-    <!-- BOTÓN FLOTANTE WHATSAPP -->
     <a href="https://wa.me/5352170105" class="whatsapp-btn" target="_blank" aria-label="Contactar por WhatsApp">
         <i class="fa-brands fa-whatsapp"></i>
     </a>

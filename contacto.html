@@ -3,122 +3,232 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Transporte Expreso</title>
+    <title>Contacto | Tranexpreso</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="assets/logo.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos específicos para la página de contacto */
+        .contact-block {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 30px;
+            align-items: flex-start;
+        }
+        .contact-icon {
+            font-size: 2rem;
+            color: var(--negro);
+            min-width: 40px;
+            text-align: center;
+            margin-top: 5px;
+        }
+        .contact-text h4 {
+            color: var(--negro);
+            font-size: 1.1rem;
+            margin-bottom: 5px;
+            text-transform: none;
+        }
+        .contact-text p {
+            font-size: 0.95rem;
+            color: var(--texto-gris);
+            margin-bottom: 5px;
+            text-align: justify;
+            line-height: 1.5;
+        }
+        .social-boxes {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+        .social-box {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+        }
+        .social-box img {
+            max-width: 150px;
+            margin-bottom: 10px;
+        }
+        .social-box p {
+            font-size: 0.9rem;
+            color: var(--texto-gris);
+        }
+        .social-box a {
+            font-weight: bold;
+            color: var(--negro);
+        }
+    </style>
 </head>
-<body>
+<body class="light-mode">
 
-    <header>
+    <!-- HEADER TIPO PORTAL -->
+    <header class="light-header">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/logo.png" alt="Transporte Expreso Logo">
+            <a href="index.html" class="logo-container">
+                <img src="assets/logo.png" alt="Tranexpreso Logo">
+                <div class="logo-text">
+                    <h1>TRANEXPRESO</h1>
+                    <span>Portal de Transporte en Santiago de Cuba</span>
+                </div>
             </a>
-            <button class="menu-toggle">☰</button>
+            <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
             <nav class="nav-links">
                 <a href="index.html">Inicio</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="nosotros.html">Nosotros</a>
+                <a href="nosotros.html">Quiénes somos</a>
+                <a href="servicios.html">Qué hacemos</a>
+                <a href="transporte-al-dia.html">Transporte al día</a>
                 <a href="contacto.html" class="active">Contacto</a>
             </nav>
         </div>
     </header>
 
-    <section class="section container" style="padding-top: 150px;">
-        <h2 class="section-title">Contác<span>tanos</span></h2>
+    <!-- CONTENIDO PRINCIPAL: DOS COLUMNAS -->
+    <div class="container layout-two-cols">
         
-        <div class="grid-2">
-            <!-- Formulario -->
-            <div>
-                <h3 style="margin-bottom: 30px; color: var(--blanco);">Envíanos un mensaje</h3>
-                <p style="margin-bottom: 30px;">Llena el formulario y te responderemos directamente por WhatsApp.</p>
-                
-                <form id="whatsapp-form">
-                    <div class="form-group">
-                        <label for="nombre">Nombre completo:</label>
-                        <input type="text" id="nombre" required placeholder="Tu nombre">
-                    </div>
-                    <div class="form-group">
-                        <label for="telefono">Teléfono de contacto:</label>
-                        <input type="tel" id="telefono" required placeholder="Ej: +53 50000000">
-                    </div>
-                    <div class="form-group">
-                        <label for="servicio">Servicio de interés:</label>
-                        <select id="servicio" required>
-                            <option value="Cargas">Transporte de Cargas</option>
-                            <option value="Pasajeros">Pasajeros por Flete</option>
-                            <option value="Otro">Otro / Consulta general</option>
-                        </select>
-                    </div>
-                    <div class="form-group">
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea id="mensaje" required placeholder="Cuéntanos qué necesitas..."></textarea>
-                    </div>
-                    <button type="submit" class="btn" style="width: 100%;">
-                        <i class="fa-brands fa-whatsapp" style="margin-right: 10px;"></i> Enviar por WhatsApp
-                    </button>
-                </form>
-            </div>
+        <!-- Columna Izquierda: Contenido -->
+        <main>
+            <!-- Imagen de encabezado -->
+            <img src="https://placehold.co/800x250/eeeeee/333333?text=Imagen+CONTACTENOS" alt="Contáctenos" style="width: 100%; border-radius: 4px; margin-bottom: 25px; object-fit: cover; border-bottom: 3px solid var(--rojo);">
 
-            <!-- Datos y Mapa -->
-            <div>
-                <h3 style="margin-bottom: 30px; color: var(--blanco);">Información de contacto</h3>
-                <div class="card" style="margin-bottom: 30px;">
-                    <p style="margin-bottom: 15px;"><i class="fa-solid fa-location-dot" style="color: var(--rojo); margin-right: 8px;"></i> <strong>Dirección:</strong><br> Carretera del Caney S/N e/ 15 y 17, Reparto Vista Alegre. Santiago de Cuba, Cuba.</p>
-                    <p style="margin-bottom: 15px;"><i class="fa-solid fa-phone" style="color: var(--rojo); margin-right: 8px;"></i> <strong>Teléfono Fijo:</strong><br> 22646218</p>
-                    <p style="margin-bottom: 15px;"><i class="fa-brands fa-whatsapp" style="color: var(--rojo); margin-right: 8px;"></i> <strong>WhatsApp:</strong><br> +53 52170105</p>
-                    <p style="margin-bottom: 15px;"><i class="fa-solid fa-envelope" style="color: var(--rojo); margin-right: 8px;"></i> <strong>Email:</strong><br> tranexpreso@eptsc.transnet.cu</p>
-                </div>
-                
-                <h3 style="margin-bottom: 20px; color: var(--blanco);">Nuestra Ubicación</h3>
-                <div class="map-container">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14764.29032561357!2d-75.8328851!3d20.0244798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8c87f3eb7229db97%3A0x6b8d7b3a7b8e6b0!2sVista%20Alegre%2C%20Santiago%20de%20Cuba!5e0!3m2!1ses!2scu!4v1700000000000!5m2!1ses!2scu" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <h3 style="color: var(--negro); font-size: 1.4rem; margin-bottom: 10px; text-transform: none;">Conéctate con TRANEXPRESO</h3>
+            <p style="margin-bottom: 30px;">Estamos a su disposición para atender sus consultas, recibir sus solicitudes y mantener una comunicación directa con nuestros clientes y colaboradores.</p>
+
+            <!-- BLOQUE TELÉFONO -->
+            <div class="contact-block">
+                <div class="contact-icon"><i class="fa-solid fa-phone"></i></div>
+                <div class="contact-text">
+                    <h4>Teléfono</h4>
+                    <p>Comuníquese con nosotros a través de nuestras líneas telefónicas.</p>
+                    <p><strong>Tel:</strong> 22 646218</p>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- FOOTER -->
-    <footer>
+            <!-- BLOQUE CORREO -->
+            <div class="contact-block">
+                <div class="contact-icon"><i class="fa-solid fa-envelope"></i></div>
+                <div class="contact-text">
+                    <h4>Correo electrónico</h4>
+                    <p>Envíenos sus consultas y solicitudes por correo electrónico.</p>
+                    <p><strong>E-mail:</strong> tranexpreso@eptsc.transnet.cu</p>
+                </div>
+            </div>
+
+            <!-- BLOQUE REDES SOCIALES -->
+            <div class="contact-block">
+                <div class="contact-icon"><i class="fa-solid fa-globe"></i></div>
+                <div class="contact-text">
+                    <h4>Redes sociales</h4>
+                    <p>Puede seguir a través de su teléfono móvil los enlaces de nuestras redes sociales para conocer las novedades, noticias y actividades de <strong>TRANEXPRESO</strong> y sentir nuestra presencia muy cerca de usted.</p>
+                </div>
+            </div>
+
+            <!-- FRANJA DE ESLOGAN -->
+            <div class="slogan-bar" style="margin-top: 30px; margin-bottom: 40px;">
+                <p>La excelencia es nuestro compromiso.</p>
+            </div>
+
+            <!-- CAJAS DE REDES SOCIALES (Logos) -->
+            <div class="social-boxes">
+                <div class="social-box">
+                    <img src="https://placehold.co/200x100/1877F2/FFFFFF?text=Facebook" alt="Facebook">
+                    <p>Facebook: <a href="https://facebook.com/tranexpreso" target="_blank">https://facebook.com/tranexpreso</a></p>
+                </div>
+                <div class="social-box">
+                    <img src="https://placehold.co/200x100/1DA1F2/FFFFFF?text=Twitter" alt="Twitter">
+                    <p>X: <a href="https://x.com/tranexpreso" target="_blank">https://x.com/tranexpreso</a></p>
+                </div>
+            </div>
+
+            <!-- BLOQUE UBICACIÓN -->
+            <div class="contact-block" style="margin-top: 20px;">
+                <div class="contact-icon"><i class="fa-solid fa-location-dot"></i></div>
+                <div class="contact-text">
+                    <h4>Ubicación</h4>
+                    <p><strong>Carretera del Caney S/N e/ 15 y 17 Reparto Vista Alegre</strong></p>
+                    <p>Santiago de Cuba. Cuba.</p>
+                </div>
+            </div>
+
+        </main>
+
+        <!-- Columna Derecha: Sidebar -->
+        <aside class="sidebar">
+            <h3>DE INTERÉS</h3>
+            <ul>
+                <li><a href="#">Directorio empresa</a></li>
+                <li><a href="#">Cultura general</a></li>
+                <li><a href="#">Efemérides</a></li>
+                <li><a href="#">Informática</a></li>
+                <li><a href="#">Guía de Control Interno</a></li>
+            </ul>
+
+            <h3>SERVICIOS</h3>
+            <ul>
+                <li><a href="#">Nube empresarial</a></li>
+                <li><a href="#">Descargas</a></li>
+                <li><a href="#">Correo Web</a></li>
+                <li><a href="#">Ecurred</a></li>
+            </ul>
+
+            <h3>ACTUALIDAD</h3>
+            <ul>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Hilo directo</a></li>
+                <li><a href="#">Tecnología</a></li>
+                <li><a href="#">Económico-Laboral</a></li>
+                <li><a href="#">Prensa nacional</a></li>
+                <li><a href="#">Estado del tiempo</a></li>
+            </ul>
+        </aside>
+
+    </div>
+
+    <!-- FOOTER CLARO -->
+    <footer class="light-footer">
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-grid-light">
+                <!-- Columna 1: Contactos -->
                 <div>
-                    <h4>Transporte Expreso</h4>
-                    <p>Te acompañamos en cada destino.</p>
-                    <p>Servicios de Cargas y Pasajeros por Flete.</p>
+                    <h4>CONTACTOS</h4>
+                    <p><strong>Dirección de la Empresa</strong></p>
+                    <p><strong>Teléfono:</strong> 22 646218</p>
+                    <p><strong>E-mail:</strong> tranexpreso@eptsc.transnet.cu</p>
+                    <br>
+                    <p><strong>Atención a la Población</strong></p>
+                    <p><strong>Teléfono:</strong> 22 646218</p>
+                    <p><strong>E-mail:</strong> apoblacion@eptsc.transnet.cu</p>
                 </div>
+
+                <!-- Columna 2: Sitios de Interés -->
                 <div>
-                    <h4>Contacto</h4>
-                    <p><i class="fa-solid fa-location-dot" style="color: var(--rojo); margin-right: 8px;"></i> Carretera del Caney S/N e/ 15 y 17, Reparto Vista Alegre, Santiago de Cuba.</p>
-                    <p><i class="fa-solid fa-phone" style="color: var(--rojo); margin-right: 8px;"></i> +53 22646218</p>
-                    <p><i class="fa-brands fa-whatsapp" style="color: var(--rojo); margin-right: 8px;"></i> +53 52170105</p>
-                    <p><i class="fa-solid fa-envelope" style="color: var(--rojo); margin-right: 8px;"></i> tranexpreso@eptsc.transnet.cu</p>
+                    <h4>SITIOS DE INTERES</h4>
+                    <ul class="footer-list">
+                        <li><a href="#">Ministerio de Transporte</a></li>
+                        <li><a href="#">Revisión Técnica Automotor</a></li>
+                        <li><a href="#">Preger</a></li>
+                        <li><a href="#">Tarjetas Fincimex</a></li>
+                        <li><a href="#">Virtual Bandec</a></li>
+                        <li><a href="#">Comercio Electrónico</a></li>
+                        <li><a href="#">Portal de la ONAT</a></li>
+                    </ul>
                 </div>
+
+                <!-- Columna 3: Redes Sociales -->
                 <div>
-                    <h4>Enlaces y Redes</h4>
-                    <a href="servicios.html">Servicios</a>
-                    <a href="nosotros.html">Sobre Nosotros</a>
-                    <a href="contacto.html">Contacto</a>
-                    <a href="/catalogo/">Catálogo (Próximamente)</a>
-                    <a href="/tarjeta/">Tarjeta (Próximamente)</a>
-                    
-                    <!-- REDES SOCIALES CON SVG -->
-                    <div style="margin-top: 20px; display: flex; gap: 15px; align-items: center;">
-                        <a href="https://facebook.com/tranexpreso" target="_blank" style="color: var(--blanco); font-size: 1.4rem; transition: color 0.3s;" onmouseover="this.style.color='var(--rojo)'" onmouseout="this.style.color='var(--blanco)'">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="https://x.com/tranexpreso" target="_blank" style="color: var(--blanco); text-decoration: none; display: inline-flex; align-items: center; transition: color 0.3s;" onmouseover="this.style.color='var(--rojo)'" onmouseout="this.style.color='var(--blanco)'">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 512 512">
-                                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
-                            </svg>
-                        </a>
+                    <h4>REDES SOCIALES</h4>
+                    <div class="social-links-light">
+                        <a href="https://facebook.com/tranexpreso" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                        <a href="https://x.com/tranexpreso" target="_blank"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+                        <a href="mailto:tranexpreso@eptsc.transnet.cu"><i class="fa-solid fa-envelope"></i> Email</a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Transporte Expreso. Todos los derechos reservados.</p>
+            
+            <!-- Copyright Final -->
+            <div class="footer-copyright">
+                TRANEXPRESO 2026 © Todos los Derechos Reservados
             </div>
         </div>
     </footer>

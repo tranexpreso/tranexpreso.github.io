@@ -3,100 +3,151 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Servicios | Transporte Expreso</title>
+    <title>Qué Hacemos | Tranexpreso</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="assets/logo.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="light-mode">
 
-    <header>
+    <!-- HEADER TIPO PORTAL -->
+    <header class="light-header">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
-                <img src="assets/logo.png" alt="Transporte Expreso Logo">
+            <a href="index.html" class="logo-container">
+                <img src="assets/logo.png" alt="Tranexpreso Logo">
+                <div class="logo-text">
+                    <h1>TRANEXPRESO</h1>
+                    <span>Portal de Transporte en Santiago de Cuba</span>
+                </div>
             </a>
-            <button class="menu-toggle">☰</button>
+            <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
             <nav class="nav-links">
                 <a href="index.html">Inicio</a>
-                <a href="servicios.html" class="active">Servicios</a>
-                <a href="nosotros.html">Nosotros</a>
+                <a href="nosotros.html">Quiénes somos</a>
+                <a href="servicios.html" class="active">Qué hacemos</a>
+                <a href="/catalogo/">Transporte al día</a>
                 <a href="contacto.html">Contacto</a>
             </nav>
         </div>
     </header>
 
-    <section class="section container" style="padding-top: 150px;">
-        <h2 class="section-title">Nuestros <span>Servicios</span></h2>
+    <!-- CONTENIDO PRINCIPAL: DOS COLUMNAS -->
+    <div class="container layout-two-cols">
         
-        <div class="card" style="margin-bottom: 40px;">
-            <h3><i class="fa-solid fa-truck-fast" style="color: var(--rojo); margin-right: 10px;"></i> Transporte de Cargas</h3>
-            <p>Ofrecemos soluciones logísticas integrales para el traslado de mercancías, materias primas y mudanzas. Nuestra flota de camiones está equipada para garantizar que tu carga llegue segura y a tiempo a su destino.</p>
+        <!-- Columna Izquierda: Contenido -->
+        <main>
+            <!-- Imagen de encabezado de la sección -->
+            <img src="https://placehold.co/800x250/eeeeee/333333?text=Imagen+QUE+HACEMOS" alt="Qué Hacemos" style="width: 100%; border-radius: 4px; margin-bottom: 25px; object-fit: cover; border-bottom: 3px solid var(--rojo);">
+
+            <div class="welcome-text">
+                <!-- MISIÓN -->
+                <h3 style="color: var(--negro); font-size: 1.2rem; margin-bottom: 10px; text-transform: uppercase;">Misión</h3>
+                <p>Brindar servicios integrales de transportación de cargas y pasajeros por flete, así como servicios de mantenimiento y reparación en nuestros talleres, garantizando seguridad, responsabilidad, eficiencia y calidad. Nos comprometemos a satisfacer las necesidades de nuestros clientes mediante soluciones de transporte confiables, atención personalizada y un equipo profesional dedicado a acompañarlos en cada destino.</p>
+
+                <!-- VISIÓN -->
+                <h3 style="color: var(--negro); font-size: 1.2rem; margin-bottom: 10px; margin-top: 30px; text-transform: uppercase;">Visión</h3>
+                <p>Ser una empresa líder y referente en el sector del transporte, reconocida por la calidad de nuestros servicios, la confianza de nuestros clientes, la profesionalidad de nuestro equipo y la capacidad de ofrecer soluciones integrales de transportación y servicios técnicos. Asimismo, aspiramos a crecer de manera sostenible, ampliar nuestras operaciones y convertirnos en la primera opción de nuestros clientes.</p>
+
+                <!-- VALORES (Separador) -->
+                <hr style="border: none; border-top: 2px solid var(--gris-borde); margin: 40px 0;">
+
+                <h3 style="color: var(--negro); font-size: 1.2rem; margin-bottom: 20px; text-transform: uppercase;">Valores</h3>
+                
+                <ol style="margin-left: 20px; color: var(--texto-gris); line-height: 1.8;">
+                    <li style="margin-bottom: 15px;"><strong>Seguridad:</strong> Protegemos la integridad de nuestros pasajeros, la carga transportada, nuestros trabajadores y los medios de transporte.</li>
+                    <li style="margin-bottom: 15px;"><strong>Compromiso:</strong> Cumplimos con nuestros clientes y asumimos cada servicio con responsabilidad y dedicación.</li>
+                    <li style="margin-bottom: 15px;"><strong>Calidad:</strong> Trabajamos para ofrecer servicios eficientes, profesionales y acordes con las necesidades de cada cliente.</li>
+                    <li style="margin-bottom: 15px;"><strong>Puntualidad:</strong> Valoramos el tiempo de nuestros clientes y procuramos cumplir los horarios y plazos acordados.</li>
+                    <li style="margin-bottom: 15px;"><strong>Honestidad y transparencia:</strong> Actuamos con ética, sinceridad y claridad en nuestras relaciones comerciales y laborales.</li>
+                    <li style="margin-bottom: 15px;"><strong>Respeto:</strong> Ofrecemos un trato digno y cordial a nuestros clientes, trabajadores, proveedores y colaboradores.</li>
+                    <li style="margin-bottom: 15px;"><strong>Profesionalidad:</strong> Promovemos la preparación, la disciplina y la mejora continua en el transporte y los servicios de taller.</li>
+                    <li style="margin-bottom: 15px;"><strong>Innovación y mejora continua:</strong> Buscamos nuevas formas de optimizar nuestros servicios, mejorar los procesos y responder a los retos del sector.</li>
+                </ol>
+            </div>
+
+            <!-- Franja de Eslogan -->
+            <div class="slogan-bar" style="margin-top: 40px;">
+                <p>TRANEXPRESO: Te acompañamos en cada destino</p>
+            </div>
+        </main>
+
+        <!-- Columna Derecha: Sidebar -->
+        <aside class="sidebar">
+            <h3>DE INTERÉS</h3>
             <ul>
-                <li>Cargas generales y de alto tonelaje.</li>
-                <li>Distribución en Santiago de Cuba y provincias orientales.</li>
-                <li>Seguridad y monitoreo en ruta.</li>
+                <li><a href="#">Directorio empresa</a></li>
+                <li><a href="#">Cultura general</a></li>
+                <li><a href="#">Efemérides</a></li>
+                <li><a href="#">Informática</a></li>
+                <li><a href="#">Guía de Control Interno</a></li>
             </ul>
-        </div>
 
-        <div class="card">
-            <h3><i class="fa-solid fa-bus" style="color: var(--rojo); margin-right: 10px;"></i> Pasajeros por Flete</h3>
-            <p>Ideal para empresas, agencias de viajes o grupos que necesitan movilizarse. Disponemos de ómnibus modernos con altos estándares de confort y seguridad para que el viaje sea una experiencia agradable.</p>
+            <h3>SERVICIOS</h3>
             <ul>
-                <li>Transporte de personal para empresas.</li>
-                <li>Excursiones y eventos grupales.</li>
-                <li>Servicio de choferes profesionales.</li>
+                <li><a href="#">Nube empresarial</a></li>
+                <li><a href="#">Descargas</a></li>
+                <li><a href="#">Correo Web</a></li>
+                <li><a href="#">Ecurred</a></li>
             </ul>
-        </div>
-    </section>
 
-    <section class="section section-bg" style="text-align: center;">
-        <div class="container">
-            <h2 class="section-title">¿Necesitas un <span>servicio específico</span>?</h2>
-            <p style="margin-bottom: 40px; font-size: 1.1rem;">Contáctanos y armamos un plan a tu medida.</p>
-            <a href="contacto.html" class="btn">Ir a Contacto</a>
-        </div>
-    </section>
+            <h3>ACTUALIDAD</h3>
+            <ul>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Hilo directo</a></li>
+                <li><a href="#">Tecnología</a></li>
+                <li><a href="#">Económico-Laboral</a></li>
+                <li><a href="#">Prensa nacional</a></li>
+                <li><a href="#">Estado del tiempo</a></li>
+            </ul>
+        </aside>
 
-    <!-- FOOTER -->
-    <footer>
+    </div>
+
+    <!-- FOOTER CLARO -->
+    <footer class="light-footer">
         <div class="container">
-            <div class="footer-grid">
+            <div class="footer-grid-light">
+                <!-- Columna 1: Contactos -->
                 <div>
-                    <h4>Transporte Expreso</h4>
-                    <p>Te acompañamos en cada destino.</p>
-                    <p>Servicios de Cargas y Pasajeros por Flete.</p>
+                    <h4>CONTACTOS</h4>
+                    <p><strong>Dirección de la Empresa</strong></p>
+                    <p><strong>Teléfono:</strong> 22 646218</p>
+                    <p><strong>E-mail:</strong> tranexpreso@eptsc.transnet.cu</p>
+                    <br>
+                    <p><strong>Atención a la Población</strong></p>
+                    <p><strong>Teléfono:</strong> 22 646218</p>
+                    <p><strong>E-mail:</strong> apoblacion@eptsc.transnet.cu</p>
                 </div>
+
+                <!-- Columna 2: Sitios de Interés -->
                 <div>
-                    <h4>Contacto</h4>
-                    <p><i class="fa-solid fa-location-dot" style="color: var(--rojo); margin-right: 8px;"></i> Carretera del Caney S/N e/ 15 y 17, Reparto Vista Alegre, Santiago de Cuba.</p>
-                    <p><i class="fa-solid fa-phone" style="color: var(--rojo); margin-right: 8px;"></i> +53 22646218</p>
-                    <p><i class="fa-brands fa-whatsapp" style="color: var(--rojo); margin-right: 8px;"></i> +53 52170105</p>
-                    <p><i class="fa-solid fa-envelope" style="color: var(--rojo); margin-right: 8px;"></i> tranexpreso@eptsc.transnet.cu</p>
+                    <h4>SITIOS DE INTERES</h4>
+                    <ul class="footer-list">
+                        <li><a href="#">Ministerio de Transporte</a></li>
+                        <li><a href="#">Revisión Técnica Automotor</a></li>
+                        <li><a href="#">Preger</a></li>
+                        <li><a href="#">Tarjetas Fincimex</a></li>
+                        <li><a href="#">Virtual Bandec</a></li>
+                        <li><a href="#">Comercio Electrónico</a></li>
+                        <li><a href="#">Portal de la ONAT</a></li>
+                    </ul>
                 </div>
+
+                <!-- Columna 3: Redes Sociales -->
                 <div>
-                    <h4>Enlaces y Redes</h4>
-                    <a href="servicios.html">Servicios</a>
-                    <a href="nosotros.html">Sobre Nosotros</a>
-                    <a href="contacto.html">Contacto</a>
-                    <a href="/catalogo/">Catálogo (Próximamente)</a>
-                    <a href="/tarjeta/">Tarjeta (Próximamente)</a>
-                    
-                    <!-- REDES SOCIALES CON SVG -->
-                    <div style="margin-top: 20px; display: flex; gap: 15px; align-items: center;">
-                        <a href="https://facebook.com/tranexpreso" target="_blank" style="color: var(--blanco); font-size: 1.4rem; transition: color 0.3s;" onmouseover="this.style.color='var(--rojo)'" onmouseout="this.style.color='var(--blanco)'">
-                            <i class="fa-brands fa-facebook"></i>
-                        </a>
-                        <a href="https://x.com/tranexpreso" target="_blank" style="color: var(--blanco); text-decoration: none; display: inline-flex; align-items: center; transition: color 0.3s;" onmouseover="this.style.color='var(--rojo)'" onmouseout="this.style.color='var(--blanco)'">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 512 512">
-                                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
-                            </svg>
-                        </a>
+                    <h4>REDES SOCIALES</h4>
+                    <div class="social-links-light">
+                        <a href="https://facebook.com/tranexpreso" target="_blank"><i class="fa-brands fa-facebook"></i> Facebook</a>
+                        <a href="https://x.com/tranexpreso" target="_blank"><i class="fa-brands fa-x-twitter"></i> Twitter</a>
+                        <a href="mailto:tranexpreso@eptsc.transnet.cu"><i class="fa-solid fa-envelope"></i> Email</a>
                     </div>
                 </div>
             </div>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Transporte Expreso. Todos los derechos reservados.</p>
+            
+            <!-- Copyright Final -->
+            <div class="footer-copyright">
+                TRANEXPRESO 2026 © Todos los Derechos Reservados
             </div>
         </div>
     </footer>

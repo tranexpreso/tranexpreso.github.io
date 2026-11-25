@@ -7,27 +7,30 @@
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="assets/logo.png" type="image/png">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
 </head>
 <body class="light-mode">
 
-    <!-- BARRA DECORATIVA SUPERIOR (Rayas rojas y negras) -->
+    <!-- BARRA DECORATIVA SUPERIOR -->
     <div class="top-bar"></div>
 
-    <!-- HEADER (Mantenemos el menú simple y elegante) -->
+    <!-- HEADER TIPO PORTAL -->
     <header class="light-header">
         <div class="container nav-container">
-            <a href="index.html" class="logo">
+            <a href="index.html" class="logo-container">
                 <img src="assets/logo.png" alt="Tranexpreso Logo">
+                <div class="logo-text">
+                    <h1>TRANEXPRESO</h1>
+                    <span>Portal de Transporte en Santiago de Cuba</span>
+                </div>
             </a>
             <button class="menu-toggle"><i class="fa-solid fa-bars"></i></button>
             <nav class="nav-links">
                 <a href="index.html" class="active">Inicio</a>
-                <a href="servicios.html">Servicios</a>
-                <a href="nosotros.html">Nosotros</a>
+                <a href="nosotros.html">Quiénes somos</a>
+                <a href="servicios.html">Qué hacemos</a>
+                <a href="transporte-al-dia.html">Transporte al día</a>
                 <a href="contacto.html">Contacto</a>
-                <a href="/catalogo/">Catálogo</a>
-                <a href="/tarjeta/">Tarjeta</a>
             </nav>
         </div>
     </header>
@@ -99,11 +102,10 @@
         </div>
     </section>
 
-    <!-- NUEVO FOOTER CLARO (Basado en tu captura) -->
+    <!-- FOOTER CLARO -->
     <footer class="light-footer">
         <div class="container">
             <div class="footer-grid-light">
-                
                 <!-- Columna 1: Contactos -->
                 <div>
                     <h4>CONTACTOS</h4>
@@ -118,12 +120,12 @@
 
                 <!-- Columna 2: Sitios de Interés -->
                 <div>
-                    <h4>SITIOS DE INTERÉS</h4>
+                    <h4>SITIOS DE INTERES</h4>
                     <ul class="footer-list">
                         <li><a href="#">Ministerio de Transporte</a></li>
                         <li><a href="#">Revisión Técnica Automotor</a></li>
                         <li><a href="#">Preger</a></li>
-                        <li><a href="#">Tarjetas Finclimex</a></li>
+                        <li><a href="#">Tarjetas Fincimex</a></li>
                         <li><a href="#">Virtual Bandec</a></li>
                         <li><a href="#">Comercio Electrónico</a></li>
                         <li><a href="#">Portal de la ONAT</a></li>
@@ -139,7 +141,11 @@
                         <a href="mailto:tranexpreso@eptsc.transnet.cu"><i class="fa-solid fa-envelope"></i> Email</a>
                     </div>
                 </div>
-
+            </div>
+            
+            <!-- Copyright Final -->
+            <div class="footer-copyright">
+                TRANEXPRESO 2026 © Todos los Derechos Reservados
             </div>
         </div>
     </footer>

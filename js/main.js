@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(el);
     });
 
-    // 3. Lógica del Formulario hacia WhatsApp
+    // 3. Lógica del Formulario hacia WhatsApp (CON PLANTILLA BONITA)
     const contactForm = document.getElementById('whatsapp-form');
     
     if (contactForm) {
@@ -39,7 +39,15 @@ document.addEventListener('DOMContentLoaded', () => {
             const mensaje = document.getElementById('mensaje').value;
             
             const numeroWhatsApp = '5352170105'; 
-            const texto = `*Nuevo mensaje desde la web*%0A%0A*Nombre:* ${nombre}%0A*Teléfono:* ${telefono}%0A*Servicio:* ${servicio}%0A*Mensaje:* ${mensaje}`;
+            
+            // Plantilla predefinida usando formato de WhatsApp (*negrita*, saltos de línea %0A)
+            const texto = 
+                `*🚀 NUEVA SOLICITUD DESDE LA WEB*%0A%0A` +
+                `*👤 Nombre:* ${nombre}%0A` +
+                `*📞 Teléfono:* ${telefono}%0A` +
+                `*🚚 Servicio de interés:* ${servicio}%0A%0A` +
+                `*📝 Mensaje:*%0A${mensaje}%0A%0A` +
+                `_Mensaje generado automáticamente desde tranexpreso.github.io_`;
             
             window.open(`https://wa.me/${numeroWhatsApp}?text=${texto}`, '_blank');
         });

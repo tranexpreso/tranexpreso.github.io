@@ -1,5 +1,5 @@
 /* =========================================
-   TRANEXPRESO - CSS (DISEÑO CLARO INSTITUCIONAL)
+   TRANEXPRESO - CSS (DISEÑO CLARO INSTITUCIONAL COMPLETO)
    ========================================= */
 
 :root {
@@ -35,10 +35,10 @@ a:hover { color: var(--negro); }
   background: linear-gradient(90deg, var(--rojo) 0%, var(--rojo) 50%, var(--negro) 50%, var(--negro) 100%);
 }
 
-/* --- Header Claro --- */
+/* --- Header Estilo Portal --- */
 .light-header {
   background-color: var(--blanco);
-  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  border-bottom: 2px solid var(--gris-borde);
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -46,21 +46,44 @@ a:hover { color: var(--negro); }
 }
 
 .nav-container { display: flex; justify-content: space-between; align-items: center; }
-.logo img { height: 60px; }
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.logo-container img { height: 70px; }
+.logo-text {
+  display: flex;
+  flex-direction: column;
+}
+.logo-text h1 {
+  color: var(--rojo);
+  font-size: 1.8rem;
+  margin: 0;
+  line-height: 1;
+  font-weight: 900;
+}
+.logo-text span {
+  color: var(--texto-gris);
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-transform: none;
+}
 
 .nav-links { display: flex; gap: 20px; align-items: center; }
 .nav-links a {
-  color: var(--negro);
-  font-weight: 700;
-  font-size: 0.9rem;
-  text-transform: uppercase;
+  color: var(--texto-gris);
+  font-weight: 600;
+  font-size: 0.95rem;
+  text-transform: none;
 }
 .nav-links a:hover, .nav-links a.active { color: var(--rojo); }
 
 .menu-toggle { display: none; background: none; border: none; color: var(--negro); font-size: 1.5rem; cursor: pointer; }
 
-/* --- Títulos y Textos --- */
-.section { padding: 60px 0; }
+/* --- Títulos y Textos Generales --- */
+.section { padding: 40px 0; }
 .welcome-title {
   text-align: center;
   font-size: 2.2rem;
@@ -74,6 +97,7 @@ a:hover { color: var(--negro); }
   text-align: justify;
   font-size: 1rem;
   color: var(--texto-gris);
+  line-height: 1.7;
 }
 
 /* --- Franja de Eslogan --- */
@@ -83,7 +107,7 @@ a:hover { color: var(--negro); }
   padding: 15px;
   text-align: center;
   margin-top: 30px;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
 }
 .slogan-bar p {
   color: var(--rojo);
@@ -92,47 +116,114 @@ a:hover { color: var(--negro); }
   margin: 0;
 }
 
-/* --- Cuadrícula de 4 Tarjetas --- */
+/* --- Layout de Dos Columnas (Para Páginas Internas) --- */
+.layout-two-cols {
+  display: grid;
+  grid-template-columns: 2.5fr 1fr; /* 2.5 partes contenido, 1 parte sidebar */
+  gap: 40px;
+  padding: 40px 0;
+}
+
+/* --- Sidebar (Barra Lateral Derecha) --- */
+.sidebar h3 {
+  color: var(--rojo);
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+  margin-top: 30px;
+  text-transform: uppercase;
+  border-bottom: 2px solid var(--gris-borde);
+  padding-bottom: 5px;
+}
+.sidebar h3:first-child { margin-top: 0; }
+.sidebar ul { list-style: none; padding: 0; }
+.sidebar ul li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 15px;
+}
+.sidebar ul li::before {
+  content: '•';
+  color: var(--negro);
+  position: absolute;
+  left: 0;
+  font-size: 1.2rem;
+}
+.sidebar a {
+  color: var(--texto-gris);
+  font-size: 0.9rem;
+  font-style: italic;
+}
+.sidebar a:hover { color: var(--rojo); text-decoration: underline; }
+
+/* --- Cuadrícula de 4 Tarjetas (Usado en el Index) --- */
 .grid-4 {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 30px;
 }
+.card-light { background: var(--blanco); text-align: center; }
+.card-img { width: 100%; height: 160px; overflow: hidden; margin-bottom: 15px; }
+.card-img img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.3s ease; }
+.card-light:hover .card-img img { transform: scale(1.05); }
+.card-light h3 { color: var(--rojo); font-size: 1.2rem; margin-bottom: 10px; }
+.card-light p { font-size: 0.9rem; color: var(--texto-gris); line-height: 1.5; }
 
-.card-light {
-  background: var(--blanco);
+/* --- Estilos para Tablas (Transporte al día) --- */
+.custom-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 30px;
+  font-size: 0.85rem;
+}
+.custom-table th, .custom-table td {
+  border: 1px solid var(--negro);
+  padding: 8px;
   text-align: center;
 }
-.card-img {
+.custom-table th {
+  background-color: #EECCA1; /* Color naranja/beige de la captura */
+  color: var(--negro);
+  font-weight: 700;
+}
+.custom-table tr:nth-child(even) {
+  background-color: #FDF5E6; 
+}
+.custom-table td:first-child {
+  font-weight: 700;
+  background-color: #F5DEB3;
+}
+.custom-table td:nth-child(2), 
+.custom-table td:nth-child(3) {
+  font-weight: 600;
+}
+
+/* --- Sección de Boletines (Transporte al día) --- */
+.boletines-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+.boletin-item {
+  text-align: center;
+}
+.boletin-item img {
   width: 100%;
-  height: 160px;
-  overflow: hidden;
+  max-width: 250px;
   margin-bottom: 15px;
 }
-.card-img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  transition: transform 0.3s ease;
+.boletin-item p {
+  font-size: 0.85rem;
+  text-align: center;
 }
-.card-light:hover .card-img img {
-  transform: scale(1.05);
-}
-.card-light h3 {
-  color: var(--rojo);
-  font-size: 1.2rem;
-  margin-bottom: 10px;
-}
-.card-light p {
-  font-size: 0.9rem;
-  color: var(--texto-gris);
-  line-height: 1.5;
+.boletin-item strong {
+  color: var(--negro);
 }
 
 /* --- Footer Claro --- */
 .light-footer {
   background-color: var(--gris-fondo);
-  padding: 60px 0;
+  padding: 60px 0 0 0;
   margin-top: 60px;
   border-top: 3px solid var(--gris-borde);
 }
@@ -140,6 +231,7 @@ a:hover { color: var(--negro); }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 40px;
+  margin-bottom: 40px;
 }
 .footer-grid-light h4 {
   color: var(--rojo);
@@ -152,19 +244,10 @@ a:hover { color: var(--negro); }
   color: var(--texto-gris);
   margin-bottom: 8px;
 }
-.footer-grid-light strong {
-  color: var(--negro);
-}
+.footer-grid-light strong { color: var(--negro); }
 
-.footer-list {
-  list-style: none;
-  padding: 0;
-}
-.footer-list li {
-  margin-bottom: 10px;
-  position: relative;
-  padding-left: 15px;
-}
+.footer-list { list-style: none; padding: 0; }
+.footer-list li { margin-bottom: 10px; position: relative; padding-left: 15px; }
 .footer-list li::before {
   content: '•';
   color: var(--rojo);
@@ -172,20 +255,10 @@ a:hover { color: var(--negro); }
   left: 0;
   font-size: 1.2rem;
 }
-.footer-list a {
-  color: var(--texto-gris);
-  font-size: 0.9rem;
-}
-.footer-list a:hover {
-  color: var(--rojo);
-  text-decoration: underline;
-}
+.footer-list a { color: var(--texto-gris); font-size: 0.9rem; }
+.footer-list a:hover { color: var(--rojo); text-decoration: underline; }
 
-.social-links-light {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
+.social-links-light { display: flex; flex-direction: column; gap: 10px; }
 .social-links-light a {
   color: var(--texto-gris);
   font-size: 0.95rem;
@@ -193,8 +266,15 @@ a:hover { color: var(--negro); }
   align-items: center;
   gap: 10px;
 }
-.social-links-light a:hover {
-  color: var(--rojo);
+.social-links-light a:hover { color: var(--rojo); }
+
+.footer-copyright {
+  text-align: center;
+  padding: 20px;
+  font-size: 0.85rem;
+  color: var(--texto-gris);
+  border-top: 1px solid var(--gris-borde);
+  font-style: italic;
 }
 
 /* --- Botón WhatsApp Flotante --- */
@@ -212,14 +292,22 @@ a:hover { color: var(--negro); }
   .menu-toggle { display: block; }
   .nav-links {
     display: none; flex-direction: column; width: 100%; position: absolute;
-    top: 90px; left: 0; background: var(--blanco); padding: 20px;
+    top: 100px; left: 0; background: var(--blanco); padding: 20px;
     border-bottom: 2px solid var(--rojo); box-shadow: 0 10px 20px rgba(0,0,0,0.1);
   }
   .nav-links.active { display: flex; }
   
-  .welcome-title { font-size: 1.6rem; }
+  /* Layout de dos columnas se vuelve de una sola */
+  .layout-two-cols { grid-template-columns: 1fr; }
   
-  .footer-grid-light {
-    grid-template-columns: 1fr; /* Una columna en móviles */
+  .welcome-title { font-size: 1.6rem; }
+  .footer-grid-light { grid-template-columns: 1fr; }
+  
+  /* Tablas y boletines en móviles */
+  .boletines-grid { grid-template-columns: 1fr; }
+  .custom-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
   }
 }

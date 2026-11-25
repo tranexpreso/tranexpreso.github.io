@@ -77,16 +77,14 @@ header {
   box-shadow: 0 4px 15px rgba(209, 0, 0, 0.3);
 }
 .btn:hover { background-color: var(--rojo-hover); color: var(--blanco); transform: translateY(-3px); box-shadow: 0 6px 20px rgba(209, 0, 0, 0.5); }
-.btn-outline { background: transparent; border: 2px solid var(--blanco); box-shadow: none; }
+.btn-outline { background: transparent; border: 2px solid var(--rojo); box-shadow: none; color: var(--blanco); }
 .btn-outline:hover { border-color: var(--rojo); background: var(--rojo); }
 
 /* --- Hero (Escritorio) --- */
 .hero {
   background: linear-gradient(rgba(0,0,0,0.1) 40%, rgba(10,10,10,0.9) 100%), url('../assets/banner.jpg') center/cover no-repeat;
-  min-height: 75vh;
-  display: flex;
-  align-items: flex-end;
-  padding-bottom: 70px;
+  min-height: 70vh;
+  border-bottom: 4px solid var(--rojo);
 }
 
 /* --- Secciones Generales --- */
@@ -169,16 +167,13 @@ footer a:hover { color: var(--rojo); }
 
   /* --- Hero (Móviles) --- */
   .hero {
-    /* La imagen se adapta completa sin recortarse, con fondo negro */
     background: #0A0A0A url('../assets/banner.jpg') center top / contain no-repeat !important;
-    min-height: 45vh; 
-    padding-top: 20px;
-    /* Sombra inferior para que los botones resalten */
-    box-shadow: inset 0 -100px 100px -50px #0A0A0A; 
-  }
-  
-  /* Empujamos los botones hacia abajo para que no tapen los vehículos */
-  .hero-buttons {
-    margin-top: 35vh; 
+    /* Ajuste perfecto a la proporción de la imagen */
+    min-height: auto;
+    aspect-ratio: 1024 / 383; 
+    width: 100%;
+    padding: 0;
+    box-shadow: none;
+    margin-bottom: 0;
   }
 }

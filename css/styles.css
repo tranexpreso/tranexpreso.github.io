@@ -170,3 +170,13 @@ footer a:hover { color: var(--rojo); }
   .hero h1 { font-size: 2.5rem; }
   .grid-2 { grid-template-columns: 1fr; }
 }
+/* --- Ajuste del Banner para Móviles --- */
+@media (max-width: 768px) {
+  .hero {
+    /* Hacemos que la imagen se centre y no se recorte tanto */
+    background-position: center center !important;
+    background-size: cover !important;
+    min-height: 60vh !important; /* Un poco más bajito en móvil */
+    padding-bottom: 40px !important;
+  }
+}

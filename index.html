@@ -6,6 +6,8 @@
     <title>Transporte Expreso | Te acompañamos en cada destino</title>
     <meta name="description" content="Empresa líder en transporte en Santiago de Cuba. Servicios de cargas y pasajeros por flete.">
     <link rel="stylesheet" href="css/styles.css">
+    <!-- FontAwesome para los iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="assets/logo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
@@ -36,7 +38,7 @@
         </div>
     </section>
 
-    <!-- NUEVA SECCIÓN DE BIENVENIDA (Para dar elegancia) -->
+    <!-- NUEVA SECCIÓN DE BIENVENIDA -->
     <section class="section container" style="padding-top: 80px;">
         <div style="text-align: center; max-width: 800px; margin: 0 auto;">
             <h2 class="section-title" style="font-size: 2.2rem;">Líderes en <span>Transportación</span></h2>
@@ -52,14 +54,14 @@
             <h2 class="section-title">Nuestros <span>Servicios</span></h2>
             <div class="grid-2">
                 <div class="card">
-                    <h3>🚚 Transporte de Cargas</h3>
+                    <h3><i class="fa-solid fa-truck-fast" style="color: var(--rojo); margin-right: 10px;"></i> Transporte de Cargas</h3>
                     <p>Camiones de alto tonelaje para el traslado seguro de tus mercancías, insumos o mudanzas. Cuidamos tu carga como si fuera nuestra.</p>
-                    <a href="servicios.html" style="display: inline-block; margin-top: 15px; font-weight: bold; color: var(--rojo);">Leer más →</a>
+                    <a href="servicios.html" style="display: inline-block; margin-top: 15px; font-weight: bold; color: var(--rojo);">Leer más <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
                 <div class="card">
-                    <h3>🚌 Pasajeros por Flete</h3>
+                    <h3><i class="fa-solid fa-bus" style="color: var(--rojo); margin-right: 10px;"></i> Pasajeros por Flete</h3>
                     <p>Ómnibus modernos y cómodos para el traslado de grupos, excursiones, eventos o transporte de personal de empresas. Puntualidad garantizada.</p>
-                    <a href="servicios.html" style="display: inline-block; margin-top: 15px; font-weight: bold; color: var(--rojo);">Leer más →</a>
+                    <a href="servicios.html" style="display: inline-block; margin-top: 15px; font-weight: bold; color: var(--rojo);">Leer más <i class="fa-solid fa-arrow-right"></i></a>
                 </div>
             </div>
         </div>
@@ -69,7 +71,9 @@
     <section class="section container" style="text-align: center;">
         <h2 class="section-title">¿Listo para <span>viajar</span> o enviar tu carga?</h2>
         <p style="margin-bottom: 40px; font-size: 1.1rem;">Escríbenos por WhatsApp y recibe una cotización inmediata sin compromiso.</p>
-        <a href="https://wa.me/5352170105" target="_blank" class="btn" style="font-size: 1.2rem; padding: 20px 50px;">Cotizar por WhatsApp</a>
+        <a href="https://wa.me/5352170105" target="_blank" class="btn" style="font-size: 1.2rem; padding: 20px 50px;">
+            <i class="fa-brands fa-whatsapp" style="margin-right: 10px;"></i> Cotizar por WhatsApp
+        </a>
     </section>
 
     <footer>
@@ -82,18 +86,22 @@
                 </div>
                 <div>
                     <h4>Contacto</h4>
-                    <p>📍 Carretera del Caney S/N e/ 15 y 17, Reparto Vista Alegre, Santiago de Cuba.</p>
-                    <p>📞 +53 22646218</p>
-                    <p>📱 +53 52170105</p>
-                    <p>✉️ tranexpreso@eptsc.transnet.cu</p>
+                    <p><i class="fa-solid fa-location-dot" style="color: var(--rojo); margin-right: 8px;"></i> Carretera del Caney S/N e/ 15 y 17, Reparto Vista Alegre, Santiago de Cuba.</p>
+                    <p><i class="fa-solid fa-phone" style="color: var(--rojo); margin-right: 8px;"></i> +53 22646218</p>
+                    <p><i class="fa-brands fa-whatsapp" style="color: var(--rojo); margin-right: 8px;"></i> +53 52170105</p>
+                    <p><i class="fa-solid fa-envelope" style="color: var(--rojo); margin-right: 8px;"></i> tranexpreso@eptsc.transnet.cu</p>
                 </div>
                 <div>
-                    <h4>Enlaces</h4>
+                    <h4>Enlaces y Redes</h4>
                     <a href="servicios.html">Servicios</a>
                     <a href="nosotros.html">Sobre Nosotros</a>
                     <a href="contacto.html">Contacto</a>
                     <a href="/catalogo/">Catálogo (Próximamente)</a>
                     <a href="/tarjeta/">Tarjeta (Próximamente)</a>
+                    <div style="margin-top: 15px; display: flex; gap: 15px;">
+                        <a href="https://facebook.com/tranexpreso" target="_blank" style="font-size: 1.2rem;"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/tranexpreso" target="_blank" style="font-size: 1.2rem;"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -102,7 +110,10 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/5352170105" class="whatsapp-btn" target="_blank" aria-label="Contactar por WhatsApp">💬</a>
+    <!-- BOTÓN FLOTANTE WHATSAPP -->
+    <a href="https://wa.me/5352170105" class="whatsapp-btn" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <script src="js/main.js"></script>
 </body>

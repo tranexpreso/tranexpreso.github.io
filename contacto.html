@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Transporte Expreso</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="icon" href="assets/logo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
@@ -55,7 +56,9 @@
                         <label for="mensaje">Mensaje:</label>
                         <textarea id="mensaje" required placeholder="Cuéntanos qué necesitas..."></textarea>
                     </div>
-                    <button type="submit" class="btn" style="width: 100%;">Enviar por WhatsApp</button>
+                    <button type="submit" class="btn" style="width: 100%;">
+                        <i class="fa-brands fa-whatsapp" style="margin-right: 10px;"></i> Enviar por WhatsApp
+                    </button>
                 </form>
             </div>
 
@@ -63,13 +66,13 @@
             <div>
                 <h3 style="margin-bottom: 30px; color: var(--blanco);">Información de contacto</h3>
                 <div class="card" style="margin-bottom: 30px;">
-                    <p style="margin-bottom: 15px;"><strong>📍 Dirección:</strong><br> Carretera del Caney S/N e/ 15 y 17, Reparto Vista Alegre. Santiago de Cuba, Cuba.</p>
-                    <p style="margin-bottom: 15px;"><strong>📞 Teléfono Fijo:</strong><br> 22646218</p>
-                    <p style="margin-bottom: 15px;"><strong>📱 WhatsApp:</strong><br> +53 52170105</p>
-                    <p style="margin-bottom: 15px;"><strong>✉️ Email:</strong><br> tranexpreso@eptsc.transnet.cu</p>
-                    <p><strong>🌐 Redes:</strong><br>
-                        <a href="https://facebook.com/tranexpreso" target="_blank">Facebook</a> | 
-                        <a href="https://x.com/tranexpreso" target="_blank">X (Twitter)</a>
+                    <p style="margin-bottom: 15px;"><i class="fa-solid fa-location-dot" style="color: var(--rojo); margin-right: 8px;"></i> <strong>Dirección:</strong><br> Carretera del Caney S/N e/ 15 y 17, Reparto Vista Alegre. Santiago de Cuba, Cuba.</p>
+                    <p style="margin-bottom: 15px;"><i class="fa-solid fa-phone" style="color: var(--rojo); margin-right: 8px;"></i> <strong>Teléfono Fijo:</strong><br> 22646218</p>
+                    <p style="margin-bottom: 15px;"><i class="fa-brands fa-whatsapp" style="color: var(--rojo); margin-right: 8px;"></i> <strong>WhatsApp:</strong><br> +53 52170105</p>
+                    <p style="margin-bottom: 15px;"><i class="fa-solid fa-envelope" style="color: var(--rojo); margin-right: 8px;"></i> <strong>Email:</strong><br> tranexpreso@eptsc.transnet.cu</p>
+                    <p><i class="fa-solid fa-globe" style="color: var(--rojo); margin-right: 8px;"></i> <strong>Redes:</strong><br>
+                        <a href="https://facebook.com/tranexpreso" target="_blank" style="margin-right: 10px;">Facebook</a> | 
+                        <a href="https://x.com/tranexpreso" target="_blank" style="margin-left: 10px;">X (Twitter)</a>
                     </p>
                 </div>
                 
@@ -83,13 +86,33 @@
 
     <footer>
         <div class="container">
+            <div class="footer-grid">
+                <div>
+                    <h4>Transporte Expreso</h4>
+                    <p>Te acompañamos en cada destino.</p>
+                </div>
+                <div>
+                    <h4>Contacto</h4>
+                    <p><i class="fa-solid fa-location-dot" style="color: var(--rojo); margin-right: 8px;"></i> Carretera del Caney S/N e/ 15 y 17, Reparto Vista Alegre, Santiago de Cuba.</p>
+                    <p><i class="fa-solid fa-phone" style="color: var(--rojo); margin-right: 8px;"></i> +53 22646218</p>
+                </div>
+                <div>
+                    <h4>Redes</h4>
+                    <div style="display: flex; gap: 15px; margin-top: 10px;">
+                        <a href="https://facebook.com/tranexpreso" target="_blank" style="font-size: 1.5rem;"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://x.com/tranexpreso" target="_blank" style="font-size: 1.5rem;"><i class="fa-brands fa-x-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 Transporte Expreso. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
 
-    <a href="https://wa.me/5352170105" class="whatsapp-btn" target="_blank" aria-label="Contactar por WhatsApp">💬</a>
+    <a href="https://wa.me/5352170105" class="whatsapp-btn" target="_blank" aria-label="Contactar por WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <script src="js/main.js"></script>
 </body>

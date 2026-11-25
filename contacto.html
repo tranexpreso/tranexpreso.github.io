@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto | Transporte Expreso</title>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="icon" href="assets/logo.png" type="image/png">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
@@ -70,10 +70,6 @@
                     <p style="margin-bottom: 15px;"><i class="fa-solid fa-phone" style="color: var(--rojo); margin-right: 8px;"></i> <strong>Teléfono Fijo:</strong><br> 22646218</p>
                     <p style="margin-bottom: 15px;"><i class="fa-brands fa-whatsapp" style="color: var(--rojo); margin-right: 8px;"></i> <strong>WhatsApp:</strong><br> +53 52170105</p>
                     <p style="margin-bottom: 15px;"><i class="fa-solid fa-envelope" style="color: var(--rojo); margin-right: 8px;"></i> <strong>Email:</strong><br> tranexpreso@eptsc.transnet.cu</p>
-                    <p><i class="fa-solid fa-globe" style="color: var(--rojo); margin-right: 8px;"></i> <strong>Redes:</strong><br>
-                        <a href="https://facebook.com/tranexpreso" target="_blank" style="margin-right: 10px;">Facebook</a> | 
-                        <a href="https://x.com/tranexpreso" target="_blank" style="margin-left: 10px;">X (Twitter)</a>
-                    </p>
                 </div>
                 
                 <h3 style="margin-bottom: 20px; color: var(--blanco);">Nuestra Ubicación</h3>
@@ -84,7 +80,7 @@
         </div>
     </section>
 
-    <!-- FOOTER CORREGIDO -->
+    <!-- FOOTER -->
     <footer>
         <div class="container">
             <div class="footer-grid">
@@ -108,18 +104,23 @@
                     <a href="/catalogo/">Catálogo (Próximamente)</a>
                     <a href="/tarjeta/">Tarjeta (Próximamente)</a>
                     
-                    <!-- ENLACES A REDES SOCIALES CORREGIDOS -->
-                    <div style="margin-top: 15px; display: flex; gap: 15px; align-items: center;">
-                        <a href="https://facebook.com/tranexpreso" target="_blank" style="font-size: 1.3rem; color: var(--texto-gris);" title="Facebook">
+                    <!-- REDES SOCIALES CON SVG -->
+                    <div style="margin-top: 20px; display: flex; gap: 15px; align-items: center;">
+                        <a href="https://facebook.com/tranexpreso" target="_blank" style="color: var(--blanco); font-size: 1.4rem; transition: color 0.3s;" onmouseover="this.style.color='var(--rojo)'" onmouseout="this.style.color='var(--blanco)'">
                             <i class="fa-brands fa-facebook"></i>
                         </a>
-                        <a href="https://x.com/tranexpreso" target="_blank" style="font-size: 1.3rem; color: var(--texto-gris);" title="X (Twitter)">
-                            <!-- Usamos el icono clásico de Twitter/X que nunca falla -->
-                            <i class="fa-brands fa-x-twitter"></i> 
+                        <a href="https://x.com/tranexpreso" target="_blank" style="color: var(--blanco); text-decoration: none; display: inline-flex; align-items: center; transition: color 0.3s;" onmouseover="this.style.color='var(--rojo)'" onmouseout="this.style.color='var(--blanco)'">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" viewBox="0 0 512 512">
+                                <path d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"/>
+                            </svg>
                         </a>
                     </div>
                 </div>
             </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Transporte Expreso. Todos los derechos reservados.</p>
+            </div>
+        </div>
     </footer>
 
     <a href="https://wa.me/5352170105" class="whatsapp-btn" target="_blank" aria-label="Contactar por WhatsApp">

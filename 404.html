@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página no encontrada | Transporte Expreso</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header class="header" role="banner">
+  <div class="header-inner">
+    <a href="index.html" class="logo" aria-label="Transporte Expreso — Inicio">
+      <img src="img/logo-transporte-expreso.png" alt="Logo Transporte Expreso" width="48" height="48">
+      <span>Transporte<span> Expreso</span></span>
+    </a>
+    <a href="index.html" class="btn btn-primario">Ir al inicio</a>
+  </div>
+</header>
+
+<main class="error-404" id="contenido">
+  <div class="codigo" aria-hidden="true">404</div>
+  <h1>Ruta no encontrada</h1>
+  <p>Parece que el destino que buscas no existe o cambió de ubicación. Regresa al inicio y sigue tu camino con nosotros.</p>
+  <a href="index.html" class="btn btn-primario">Volver al inicio</a>
+</main>
+
+<footer class="footer" role="contentinfo">
+  <div class="container">
+    <div class="footer-bottom" style="border-top:none;margin-top:0;">
+      <p>© <span id="anio"></span> Transporte Expreso · Empresa Provincial de Transporte Santiago de Cuba. ·
+        📞 <a href="tel:+5322646218">22 646218</a> ·
+        ✉️ <a href="mailto:tranexpreso@eptsc.transnet.cu">tranexpreso@eptsc.transnet.cu</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('anio').textContent = new Date().getFullYear();</script>
+</body>
+</html>

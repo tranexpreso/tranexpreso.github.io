@@ -1,3 +1,7 @@
 User-agent: *
 Allow: /
-Sitemap: https://tranexpreso.github.io/sitemap.xml
+Disallow: /privacidad.html
+Disallow: /terminos.html
+Disallow: /404.html
+
+Sitemap: https://www.transporteexpreso.com/sitemap.xml
